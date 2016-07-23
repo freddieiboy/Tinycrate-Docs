@@ -19,7 +19,7 @@ Crates are central to Tinycrate and arguably the most important part of the app.
 
 ### Crate API - `Crate.js`
 
-In the app, just import `Crate.js` and use it in the render section. Here is the full crate API. Not every type of crate uses all these types but know that you can
+In the app, just import `Crate.js` and use it in the render section. Here is the full crate API. Note: Not every type of crate uses all these types.
 
 ```js
   <Crate
@@ -64,7 +64,7 @@ Subtypes of crates that belong to the 4 major crates. This option is for further
       - Twitter
 
 #### `attribution={ URL }`
-Define attribution for a crate. This is the small photo on the bottom. Just pass the URL down and BaseCrate will take care of style and states.
+Define attribution for a crate. This is the small photo on the bottom. Just pass the URL down and BaseCrate will take care of style and states. Currently only active for `Default`.
 #### `action={ FUNCTION }`
 Defines the action that will fire on `pressUp` so that each crate has a limited amount of touch handlers. Try not to wrap a crate in another touch handler.
 #### `POP={ BOOLEAN }`
