@@ -2,6 +2,21 @@
 
 Crates are central to Tinycrate and arguably the most important part of the app. To have a good developer experience, all crate types such as **Default** or **Profile** extend the `BaseCrateVC` file.
 
+    # Crate Hierarchy
+
+    // HIGHEST: API that routes defined types to Mid level.
+    => Crate.js
+
+      // MID: Extends base with individual icons and styles
+      -> BaseCrateVC.js
+      -> LoginCrateVC.js
+      -> DefaultCrateVC.js
+      -> EmptyCrateVC.js
+      -> ProfileCrateVC.js
+
+          // LOWEST: Defines Crate state & base style
+          -> BaseCrateVC.js
+
 ### Crate API - `Crate.js`
 
 In the app, just import `Crate.js` and use it in the render section. Here is the full crate API. Not every type of crate uses all these types but know that you can
