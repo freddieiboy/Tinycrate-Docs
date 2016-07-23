@@ -4,7 +4,7 @@ Crates are central to Tinycrate and arguably the most important part of the app.
 
     # Crate Hierarchy
 
-    // HIGHEST: API that routes defined types to Mid level.
+    // HIGHEST: API that routes defined types to Mid level
     => Crate.js
 
       // MID: Extends base with individual icons and styles
@@ -22,6 +22,8 @@ Crates are central to Tinycrate and arguably the most important part of the app.
 In the app, just import `Crate.js` and use it in the render section. Here is the full crate API. Note: Not every type of crate uses all these types.
 
 ```js
+import Crate from './Crate.js';
+
   <Crate
     size={80}
     color={'GREEN'}
