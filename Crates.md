@@ -39,14 +39,14 @@ There are currently 4 major crate types:
 #### `subType={ STRING }`
 Subtypes of crates that belong to the 4 major crates. This option is for further defining the type of crate that you want to use.  
   - Parent: `Default`
-      - TEXT
-      - PHOTO
-      - REACTION
-      - NOTIFICATION
+      - Text
+      - Photo
+      - Reaction
+      - Notification
   - Parent: `Login`
-      - GOOGLE
-      - FACEBOOK
-      - TWITTER
+      - Google
+      - Facebook
+      - Twitter
 
 #### `attribution={ URL }`
 Define attribution for a crate. This is the small photo on the bottom. Just pass the URL down and BaseCrate will take care of style and states.
