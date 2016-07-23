@@ -1,5 +1,5 @@
 # Summary
 
-* [Introduction](README.md)
+* [Introduction](Tinycrate.md)
 * [Crates](Crates.md)
 
