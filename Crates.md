@@ -19,4 +19,38 @@ In the app, just import `Crate.js` and use it in the render section. Here is the
     />
 ```
 
-Test
+#### `size={ NUMBER }`
+Define the size of a crate. It's usually 80.
+#### `color={ STRING }`
+Define the color of a crate. Firebase/Redux returns a string name such as 'GREEN'. Use color().light/dark for the appropriate hex in CrateColors.js.
+#### `preview={ URL }`
+Define the top preview of the crate. BaseCrateVC automagically gives previews a borderRadius. Just pass down the URL of the image.
+#### `type={ STRING }`
+There are currently 4 major crate types:
+  - Default
+      - Normal crates exist in `CrateList` and have pop.
+  - Login
+      - Special crates that have Google, Facebook, Twitter logos with pops.
+  - Profile
+      - Exist in the `ProfilePage` and `OpenCrate` doesn't always have pop animation.
+  - Empty
+      - Special crate with multiple emoji's that exist in `CrateList` and has pop animation.
+
+#### `subType={ STRING }`
+Subtypes of crates that belong to the 4 major crates. This option is for further defining the type of crate that you want to use.  
+  - Parent: `Default`
+      - TEXT
+      - PHOTO
+      - REACTION
+      - NOTIFICATION
+  - Parent: `Login`
+      - GOOGLE
+      - FACEBOOK
+      - TWITTER
+
+#### `attribution={ URL }`
+Define attribution for a crate. This is the small photo on the bottom. Just pass the URL down and BaseCrate will take care of style and states.
+#### `action={ FUNCTION }`
+Defines the action that will fire on `pressUp` so that each crate has a limited amount of touch handlers. Try not to wrap a crate in another touch handler.
+#### `POP={ BOOLEAN }`
+TODO: add pop to Tinycrate
